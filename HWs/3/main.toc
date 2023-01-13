@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}روند تخصیص فرکانس}{2}{section.1}%
+\contentsline {section}{\numberline {2}نقش \lr {FCC} و نهادهای رگولاتوری در تخصیص فرکانس}{2}{section.2}%
+\contentsline {section}{\numberline {3}ناحیه‌بندی فرکانسی صورت پذیرفته توسط \lr {ITU}}{3}{section.3}%
+\contentsline {section}{\numberline {4}باندهای عملیاتی در شبکه‌های تلفن‌همراه}{3}{section.4}%
+\contentsline {section}{\numberline {5}\lr {ARFCN} چیست؟ رابطه‌های آن با فرکانس در شبکه‌های نسل چهار و پنج را توضیح دهید.}{4}{section.5}%

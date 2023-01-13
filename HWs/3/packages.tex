@@ -1,0 +1,40 @@
+% برای وارد کردن انواع مختلف پسوندهای تصاویر
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{float}
+
+% بسته‌هایی برای کارهای ریاضیاتی
+\usepackage{amsmath,amsthm,amssymb}
+
+%برای تنظیم حاشیه
+\usepackage{geometry}
+
+% جزو آخرین بسته
+\usepackage[hidelinks]{hyperref}
+
+% بسته Xepersian می‌بایست آخرین بسته‌ای باشد که فراخوانی می‌شود.
+\usepackage{xepersian}
+
+\usepackage{sectsty}
+
+
+% تنظیمات geometry
+\geometry{left=2cm,right=2.5cm,top=2.5cm,bottom=3cm,a4paper}
+
+%تنظیمات بسته hyperref
+\hypersetup{colorlinks=true,linkcolor=blue}
+
+%تنظیم فونت برای xepersian
+\settextfont[Scale=1.3]{BNazanin.ttf}
+
+\sectionfont{\huge}
+\subsectionfont{\Large}
+
+\input{header}
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\cdot$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\renewcommand{\labelitemiv}{$\ast$}
