@@ -1,0 +1,10 @@
+StudentModule DEFINITIONS ::=
+BEGIN
+
+Student ::= SEQUENCE {
+    id INTEGER,
+    name PrintableString,
+    major PrintableString
+}
+
+END

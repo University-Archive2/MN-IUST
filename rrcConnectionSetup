@@ -1,0 +1,404 @@
+DLT: 148, Payload: aww (Automator Wireshark Wrapper)
+Automator Wireshark Wrapper
+    Protocol: 102
+    Data length: 113
+DL-CCCH-Message
+    message: rrcConnectionSetup (3)
+        rrcConnectionSetup: r3 (0)
+            r3
+                rrcConnectionSetup-r3
+                    initialUE-Identity: tmsi-and-LAI (1)
+                        tmsi-and-LAI
+                            tmsi: 22161f32 [bit length 32, 0010 0010  0001 0110  0001 1111  0011 0010 decimal value 571875122]
+                            lai
+                                plmn-Identity
+                                    mcc: 3 items
+                                        Item 0
+                                            Digit: 4
+                                        Item 1
+                                            Digit: 3
+                                        Item 2
+                                            Digit: 2
+                                    mnc: 2 items
+                                        Item 0
+                                            Digit: 1
+                                        Item 1
+                                            Digit: 1
+                                lac: 8598 [bit length 16, 1000 0101  1001 1000 decimal value 34200]
+                    rrc-TransactionIdentifier: 0
+                    new-U-RNTI
+                        srnc-Identity: 0290 [bit length 12, 4 LSB pad bits, 0000 0010  1001 .... decimal value 41]
+                        s-RNTI: 3acae0 [bit length 20, 4 LSB pad bits, 0011 1010  1100 1010  1110 .... decimal value 240814]
+                    rrc-StateIndicator: cell-DCH (0)
+                    utran-DRX-CycleLengthCoeff: 6
+                    capabilityUpdateRequirement
+                        1... .... ue-RadioCapabilityFDDUpdateRequirement: True
+                        .0.. .... ue-RadioCapabilityTDDUpdateRequirement: False
+                        systemSpecificCapUpdateReqList: 1 item
+                            Item 0
+                                SystemSpecificCapUpdateReq: gsm (0)
+                    srb-InformationSetupList: 4 items
+                        Item 0
+                            SRB-InformationSetup
+                                rlc-InfoChoice: rlc-Info (0)
+                                    rlc-Info
+                                        ul-RLC-Mode: ul-UM-RLC-Mode (1)
+                                            ul-UM-RLC-Mode
+                                        dl-RLC-Mode: dl-UM-RLC-Mode (1)
+                                            dl-UM-RLC-Mode: NULL
+                                rb-MappingInfo: 2 items
+                                    Item 0
+                                        RB-MappingOption
+                                            ul-LogicalChannelMappings: oneLogicalChannel (0)
+                                                oneLogicalChannel
+                                                    ul-TransportChannelType: dch (0)
+                                                        dch: 31
+                                                    logicalChannelIdentity: 1
+                                                    rlc-SizeList: configured (1)
+                                                        configured: NULL
+                                                    mac-LogicalChannelPriority: 1
+                                            dl-LogicalChannelMappingList: 1 item
+                                                Item 0
+                                                    DL-LogicalChannelMapping
+                                                        dl-TransportChannelType: dch (0)
+                                                            dch: 31
+                                                        logicalChannelIdentity: 1
+                                    Item 1
+                                        RB-MappingOption
+                                            ul-LogicalChannelMappings: oneLogicalChannel (0)
+                                                oneLogicalChannel
+                                                    ul-TransportChannelType: rach (1)
+                                                        rach: NULL
+                                                    logicalChannelIdentity: 1
+                                                    rlc-SizeList: explicitList (2)
+                                                        explicitList: 1 item
+                                                            Item 0
+                                                                RLC-SizeInfo
+                                                                    rlc-SizeIndex: 1
+                                                    mac-LogicalChannelPriority: 1
+                                            dl-LogicalChannelMappingList: 1 item
+                                                Item 0
+                                                    DL-LogicalChannelMapping
+                                                        dl-TransportChannelType: fach (1)
+                                                            fach: NULL
+                                                        logicalChannelIdentity: 1
+                        Item 1
+                            SRB-InformationSetup
+                                rlc-InfoChoice: rlc-Info (0)
+                                    rlc-Info
+                                        ul-RLC-Mode: ul-AM-RLC-Mode (0)
+                                            ul-AM-RLC-Mode
+                                                transmissionRLC-Discard: noDiscard (3)
+                                                    noDiscard: dat40 (15)
+                                                transmissionWindowSize: tw128 (5)
+                                                timerRST: tr250 (4)
+                                                max-RST: rst1 (0)
+                                                pollingInfo
+                                                    timerPoll: tp140 (13)
+                                                    poll-SDU: sdu1 (0)
+                                                    ...1 .... lastTransmissionPDU-Poll: True
+                                                    .... 1... lastRetransmissionPDU-Poll: True
+                                                    pollWindow: pw50 (0)
+                                        dl-RLC-Mode: dl-AM-RLC-Mode (0)
+                                            dl-AM-RLC-Mode
+                                                ..1. .... inSequenceDelivery: True
+                                                receivingWindowSize: rw32 (3)
+                                                dl-RLC-StatusInfo
+                                                    timerStatusProhibit: tsp120 (11)
+                                                    1... .... missingPDU-Indicator: True
+                                rb-MappingInfo: 2 items
+                                    Item 0
+                                        RB-MappingOption
+                                            ul-LogicalChannelMappings: oneLogicalChannel (0)
+                                                oneLogicalChannel
+                                                    ul-TransportChannelType: dch (0)
+                                                        dch: 31
+                                                    logicalChannelIdentity: 2
+                                                    rlc-SizeList: configured (1)
+                                                        configured: NULL
+                                                    mac-LogicalChannelPriority: 1
+                                            dl-LogicalChannelMappingList: 1 item
+                                                Item 0
+                                                    DL-LogicalChannelMapping
+                                                        dl-TransportChannelType: dch (0)
+                                                            dch: 31
+                                                        logicalChannelIdentity: 2
+                                    Item 1
+                                        RB-MappingOption
+                                            ul-LogicalChannelMappings: oneLogicalChannel (0)
+                                                oneLogicalChannel
+                                                    ul-TransportChannelType: rach (1)
+                                                        rach: NULL
+                                                    logicalChannelIdentity: 2
+                                                    rlc-SizeList: explicitList (2)
+                                                        explicitList: 1 item
+                                                            Item 0
+                                                                RLC-SizeInfo
+                                                                    rlc-SizeIndex: 1
+                                                    mac-LogicalChannelPriority: 1
+                                            dl-LogicalChannelMappingList: 1 item
+                                                Item 0
+                                                    DL-LogicalChannelMapping
+                                                        dl-TransportChannelType: fach (1)
+                                                            fach: NULL
+                                                        logicalChannelIdentity: 2
+                        Item 2
+                            SRB-InformationSetup
+                                rlc-InfoChoice: rlc-Info (0)
+                                    rlc-Info
+                                        ul-RLC-Mode: ul-AM-RLC-Mode (0)
+                                            ul-AM-RLC-Mode
+                                                transmissionRLC-Discard: noDiscard (3)
+                                                    noDiscard: dat40 (15)
+                                                transmissionWindowSize: tw32 (3)
+                                                timerRST: tr250 (4)
+                                                max-RST: rst1 (0)
+                                                pollingInfo
+                                                    timerPoll: tp140 (13)
+                                                    poll-SDU: sdu1 (0)
+                                                    .... 1... lastTransmissionPDU-Poll: True
+                                                    .... .1.. lastRetransmissionPDU-Poll: True
+                                                    pollWindow: pw50 (0)
+                                        dl-RLC-Mode: dl-AM-RLC-Mode (0)
+                                            dl-AM-RLC-Mode
+                                                ...1 .... inSequenceDelivery: True
+                                                receivingWindowSize: rw32 (3)
+                                                dl-RLC-StatusInfo
+                                                    timerStatusProhibit: tsp120 (11)
+                                                    .1.. .... missingPDU-Indicator: True
+                                rb-MappingInfo: 2 items
+                                    Item 0
+                                        RB-MappingOption
+                                            ul-LogicalChannelMappings: oneLogicalChannel (0)
+                                                oneLogicalChannel
+                                                    ul-TransportChannelType: dch (0)
+                                                        dch: 31
+                                                    logicalChannelIdentity: 3
+                                                    rlc-SizeList: configured (1)
+                                                        configured: NULL
+                                                    mac-LogicalChannelPriority: 2
+                                            dl-LogicalChannelMappingList: 1 item
+                                                Item 0
+                                                    DL-LogicalChannelMapping
+                                                        dl-TransportChannelType: dch (0)
+                                                            dch: 31
+                                                        logicalChannelIdentity: 3
+                                    Item 1
+                                        RB-MappingOption
+                                            ul-LogicalChannelMappings: oneLogicalChannel (0)
+                                                oneLogicalChannel
+                                                    ul-TransportChannelType: rach (1)
+                                                        rach: NULL
+                                                    logicalChannelIdentity: 3
+                                                    rlc-SizeList: explicitList (2)
+                                                        explicitList: 1 item
+                                                            Item 0
+                                                                RLC-SizeInfo
+                                                                    rlc-SizeIndex: 1
+                                                    mac-LogicalChannelPriority: 2
+                                            dl-LogicalChannelMappingList: 1 item
+                                                Item 0
+                                                    DL-LogicalChannelMapping
+                                                        dl-TransportChannelType: fach (1)
+                                                            fach: NULL
+                                                        logicalChannelIdentity: 3
+                        Item 3
+                            SRB-InformationSetup
+                                rlc-InfoChoice: rlc-Info (0)
+                                    rlc-Info
+                                        ul-RLC-Mode: ul-AM-RLC-Mode (0)
+                                            ul-AM-RLC-Mode
+                                                transmissionRLC-Discard: noDiscard (3)
+                                                    noDiscard: dat40 (15)
+                                                transmissionWindowSize: tw32 (3)
+                                                timerRST: tr250 (4)
+                                                max-RST: rst1 (0)
+                                                pollingInfo
+                                                    timerPoll: tp140 (13)
+                                                    poll-SDU: sdu1 (0)
+                                                    .... .1.. lastTransmissionPDU-Poll: True
+                                                    .... ..1. lastRetransmissionPDU-Poll: True
+                                                    pollWindow: pw50 (0)
+                                        dl-RLC-Mode: dl-AM-RLC-Mode (0)
+                                            dl-AM-RLC-Mode
+                                                .... 1... inSequenceDelivery: True
+                                                receivingWindowSize: rw32 (3)
+                                                dl-RLC-StatusInfo
+                                                    timerStatusProhibit: tsp120 (11)
+                                                    ..1. .... missingPDU-Indicator: True
+                                rb-MappingInfo: 2 items
+                                    Item 0
+                                        RB-MappingOption
+                                            ul-LogicalChannelMappings: oneLogicalChannel (0)
+                                                oneLogicalChannel
+                                                    ul-TransportChannelType: dch (0)
+                                                        dch: 31
+                                                    logicalChannelIdentity: 4
+                                                    rlc-SizeList: configured (1)
+                                                        configured: NULL
+                                                    mac-LogicalChannelPriority: 2
+                                            dl-LogicalChannelMappingList: 1 item
+                                                Item 0
+                                                    DL-LogicalChannelMapping
+                                                        dl-TransportChannelType: dch (0)
+                                                            dch: 31
+                                                        logicalChannelIdentity: 4
+                                    Item 1
+                                        RB-MappingOption
+                                            ul-LogicalChannelMappings: oneLogicalChannel (0)
+                                                oneLogicalChannel
+                                                    ul-TransportChannelType: rach (1)
+                                                        rach: NULL
+                                                    logicalChannelIdentity: 4
+                                                    rlc-SizeList: explicitList (2)
+                                                        explicitList: 1 item
+                                                            Item 0
+                                                                RLC-SizeInfo
+                                                                    rlc-SizeIndex: 1
+                                                    mac-LogicalChannelPriority: 2
+                                            dl-LogicalChannelMappingList: 1 item
+                                                Item 0
+                                                    DL-LogicalChannelMapping
+                                                        dl-TransportChannelType: fach (1)
+                                                            fach: NULL
+                                                        logicalChannelIdentity: 4
+                    ul-CommonTransChInfo
+                        modeSpecificInfo: fdd (0)
+                            fdd
+                                ul-TFCS: normalTFCI-Signalling (0)
+                                    normalTFCI-Signalling: complete (0)
+                                        complete
+                                            ctfcSize: ctfc2Bit (0)
+                                                ctfc2Bit: 2 items
+                                                    Item 0
+                                                        ctfc2Bit item
+                                                            ctfc2: 0
+                                                            powerOffsetInformation
+                                                                gainFactorInformation: computedGainFactors (1)
+                                                                    computedGainFactors: 1
+                                                    Item 1
+                                                        ctfc2Bit item
+                                                            ctfc2: 1
+                                                            powerOffsetInformation
+                                                                gainFactorInformation: signalledGainFactors (0)
+                                                                    signalledGainFactors
+                                                                        modeSpecificInfo: fdd (0)
+                                                                            fdd
+                                                                                gainFactorBetaC: 11
+                                                                        gainFactorBetaD: 15
+                                                                        referenceTFC-ID: 1
+                    ul-AddReconfTransChInfoList: 1 item
+                        Item 0
+                            UL-AddReconfTransChInformation
+                                ul-TransportChannelType: dch (0)
+                                transportChannelIdentity: 31
+                                transportFormatSet: dedicatedTransChTFS (0)
+                                    dedicatedTransChTFS
+                                        tti: tti10 (0)
+                                            tti10: 1 item
+                                                Item 0
+                                                    DedicatedDynamicTF-Info
+                                                        rlc-Size: octetModeType1 (1)
+                                                            octetModeType1: sizeType1 (0)
+                                                                sizeType1: 16
+                                                        numberOfTbSizeList: 2 items
+                                                            Item 0
+                                                                NumberOfTransportBlocks: zero (0)
+                                                                    zero: NULL
+                                                            Item 1
+                                                                NumberOfTransportBlocks: one (1)
+                                                                    one: NULL
+                                                        logicalChannelList: allSizes (0)
+                                                            allSizes: NULL
+                                        semistaticTF-Information
+                                            channelCodingType: convolutional (1)
+                                                convolutional: third (1)
+                                            rateMatchingAttribute: 185
+                                            crc-Size: crc16 (3)
+                    dl-CommonTransChInfo
+                        modeSpecificInfo: fdd (0)
+                            fdd
+                                dl-Parameters: sameAsUL (1)
+                                    sameAsUL: NULL
+                    dl-AddReconfTransChInfoList: 1 item
+                        Item 0
+                            DL-AddReconfTransChInformation
+                                dl-TransportChannelType: dch (0)
+                                dl-transportChannelIdentity: 31
+                                tfs-SignallingMode: explicit-config (0)
+                                    explicit-config: dedicatedTransChTFS (0)
+                                        dedicatedTransChTFS
+                                            tti: tti10 (0)
+                                                tti10: 1 item
+                                                    Item 0
+                                                        DedicatedDynamicTF-Info
+                                                            rlc-Size: octetModeType1 (1)
+                                                                octetModeType1: sizeType1 (0)
+                                                                    sizeType1: 16
+                                                            numberOfTbSizeList: 2 items
+                                                                Item 0
+                                                                    NumberOfTransportBlocks: zero (0)
+                                                                        zero: NULL
+                                                                Item 1
+                                                                    NumberOfTransportBlocks: one (1)
+                                                                        one: NULL
+                                                            logicalChannelList: allSizes (0)
+                                                                allSizes: NULL
+                                            semistaticTF-Information
+                                                channelCodingType: convolutional (1)
+                                                    convolutional: third (1)
+                                                rateMatchingAttribute: 230
+                                                crc-Size: crc16 (3)
+                                dch-QualityTarget
+                                    bler-QualityValue: -20
+                    ul-ChannelRequirement: ul-DPCH-Info (0)
+                        ul-DPCH-Info
+                            ul-DPCH-PowerControlInfo: fdd (0)
+                                fdd
+                                    dpcch-PowerOffset: -45
+                                    pc-Preamble: 0
+                                    sRB-delay: 7
+                                    powerControlAlgorithm: algorithm1 (0)
+                                        algorithm1: 0
+                            modeSpecificInfo: fdd (0)
+                                fdd
+                                    scramblingCodeType: longSC (1)
+                                    scramblingCode: 1289390
+                                    spreadingFactor: sf64 (4)
+                                    .... 1... tfci-Existence: True
+                                    puncturingLimit: pl1 (15)
+                    dl-CommonInformation
+                        dl-DPCH-InfoCommon
+                            cfnHandling: initialise (1)
+                                initialise
+                            modeSpecificInfo: fdd (0)
+                                fdd
+                                    dl-DPCH-PowerControlInfo
+                                        modeSpecificInfo: fdd (0)
+                                            fdd
+                                                dpc-Mode: singleTPC (0)
+                                    powerOffsetPilot-pdpdch: 0
+                                    spreadingFactorAndPilot: sfd128 (5)
+                                        sfd128: pb4 (0)
+                                    positionFixedOrFlexible: fixed (0)
+                                    ...0 .... tfci-Existence: False
+                        modeSpecificInfo: fdd (0)
+                            fdd
+                                defaultDPCH-OffsetValue: 139
+                    dl-InformationPerRL-List: 1 item
+                        Item 0
+                            DL-InformationPerRL
+                                modeSpecificInfo: fdd (0)
+                                    fdd
+                                        primaryCPICH-Info
+                                            primaryScramblingCode: 470
+                                dl-DPCH-InfoPerRL: fdd (0)
+                                    fdd
+                                        pCPICH-UsageForChannelEst: mayBeUsed (0)
+                                        dpch-FrameOffset: 128
+                                        dl-ChannelisationCodeList: 1 item
+                                            Item 0
+                                                DL-ChannelisationCode
+                                                    sf-AndCodeNumber: sf128 (5)
+                                                        sf128: 18
+                                        tpc-CombinationIndex: 0

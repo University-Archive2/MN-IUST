@@ -1,0 +1,12 @@
+\contentsline {chapter}{فهرست اشکال}{ii}{section*.2}%
+\contentsline {chapter}{فصل\nobreakspace {}\numberline {1}\nobreakspace {}\nobreakspace {}\nobreakspace {} چکیده}{1}{chapter.1}%
+\contentsline {chapter}{فصل\nobreakspace {}\numberline {2}\nobreakspace {}\nobreakspace {}\nobreakspace {} مقدمه}{2}{chapter.2}%
+\contentsline {chapter}{فصل\nobreakspace {}\numberline {3}\nobreakspace {}\nobreakspace {}\nobreakspace {} RIC Near-Real-Time}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\lr {xApp}}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}\lr {Messaging Infrastructure}}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}\lr {Conflict Mitigation}}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.4}\lr {Subscription Manager}}{6}{section.3.4}%
+\contentsline {section}{\numberline {3.5}\lr {Management Services}}{6}{section.3.5}%
+\contentsline {section}{\numberline {3.6}\lr {Security}}{7}{section.3.6}%
+\contentsline {section}{\numberline {3.7}\lr {Database}}{7}{section.3.7}%
+\contentsline {section}{\numberline {3.8}\lr {Terminations}}{7}{section.3.8}%

@@ -1,0 +1,756 @@
+DLT: 148, Payload: aww (Automator Wireshark Wrapper)
+Automator Wireshark Wrapper
+    Protocol: 101
+    Data length: 145
+UL-DCCH-Message
+    message: rrcConnectionSetupComplete (18)
+        rrcConnectionSetupComplete
+            rrc-TransactionIdentifier: 0
+            startList: 2 items
+                Item 0
+                    STARTSingle
+                        cn-DomainIdentity: cs-domain (0)
+                        start-Value: 000060 [bit length 20, 4 LSB pad bits, 0000 0000  0000 0000  0110 .... decimal value 6]
+                Item 1
+                    STARTSingle
+                        cn-DomainIdentity: ps-domain (1)
+                        start-Value: 000000 [bit length 20, 4 LSB pad bits, 0000 0000  0000 0000  0000 .... decimal value 0]
+            ue-RadioAccessCapability
+                pdcp-Capability
+                    0... .... losslessSRNS-RelocationSupport: False
+                    supportForRfc2507: notSupported (0)
+                        notSupported: NULL
+                rlc-Capability
+                    totalRLC-AM-BufferSize: kb1000 (6)
+                    maximumRLC-WindowSize: mws2047 (0)
+                    maximumAM-EntityNumber: am16 (5)
+                transportChannelCapability
+                    dl-TransChCapability
+                        maxNoBitsReceived: b6400 (5)
+                        maxConvCodeBitsReceived: b6400 (5)
+                        turboDecodingSupport: supported (1)
+                            supported: b6400 (5)
+                        maxSimultaneousTransChs: e8 (1)
+                        maxSimultaneousCCTrCH-Count: 1
+                        maxReceivedTransportBlocks: tb32 (3)
+                        maxNumberOfTFC: tfc128 (5)
+                        maxNumberOfTF: tf64 (1)
+                    ul-TransChCapability
+                        maxNoBitsTransmitted: b6400 (5)
+                        maxConvCodeBitsTransmitted: b6400 (5)
+                        turboEncodingSupport: supported (1)
+                            supported: b6400 (5)
+                        maxSimultaneousTransChs: e8 (2)
+                        modeSpecificInfo: fdd (0)
+                            fdd: NULL
+                        maxTransmittedBlocks: tb32 (4)
+                        maxNumberOfTFC: tfc64 (5)
+                        maxNumberOfTF: tf64 (1)
+                rf-Capability
+                physicalChannelCapability
+                    fddPhysChCapability
+                        downlinkPhysChCapability
+                            maxNoDPCH-PDSCH-Codes: 1
+                            maxNoPhysChBitsReceived: b9600 (6)
+                            .... .0.. supportForSF-512: False
+                            .... ..0. dummy: False
+                            dummy2: notSupported (0)
+                                notSupported: NULL
+                        uplinkPhysChCapability
+                            maxNoDPDCH-BitsTransmitted: b9600 (4)
+                            .... 0... dummy: False
+                ue-MultiModeRAT-Capability
+                    multiRAT-CapabilityList
+                        .... .1.. supportOfGSM: True
+                        .... ..0. supportOfMulticarrier: False
+                    multiModeCapability: fdd (1)
+                securityCapability
+                    cipheringAlgorithmCap: 0003 [bit length 16, 0000 0000  0000 0011 decimal value 3]
+                    integrityProtectionAlgorithmCap: 0002 [bit length 16, 0000 0000  0000 0010 decimal value 2]
+                ue-positioning-Capability
+                    .1.. .... standaloneLocMethodsSupported: True
+                    ..0. .... ue-BasedOTDOA-Supported: False
+                    networkAssistedGPS-Supported: noNetworkAssistedGPS (3)
+                    .... .0.. supportForUE-GPS-TimingOfCellFrames: False
+                    .... ..0. supportForIPDL: False
+            ue-RATSpecificCapability: 1 item
+                Item 0
+                    InterRAT-UE-RadioAccessCapability: gsm (0)
+                        gsm
+                            gsm-Classmark2: 33035758a6
+                            0... .... = Spare: 0
+                            .10. .... = Revision Level: Used by mobile stations supporting R99 or later versions of the protocol (2)
+                            ...1 .... = ES IND: Controlled Early Classmark Sending option is implemented in the MS
+                            .... 0... = A5/1 algorithm supported: encryption algorithm A5/1 available
+                            .... .111 = RF Power Capability: RF Power capability is irrelevant in this information element (7)
+                            0... .... = Spare: 0
+                            .1.. .... = PS capability (pseudo-synchronization capability): PS capability present
+                            ..01 .... = SS Screening Indicator: Capability of handling of ellipsis notation and phase 2 error handling  (1)
+                            .... 1... = SM capability (MT SMS pt to pt capability): Mobile station supports mobile terminated point to point SMS
+                            .... .0.. = VBS notification reception: no VBS capability or no notifications wanted
+                            .... ..0. = VGCS notification reception: no VGCS capability or no notifications wanted
+                            .... ...0 = FC Frequency Capability: The MS does not support the E-GSM or R-GSM band
+                            1... .... = CM3: The MS supports options that are indicated in classmark 3 IE
+                            .0.. .... = Spare: 0
+                            ..1. .... = LCS VA capability (LCS value added location request notification capability): LCS value added location request notification capability supported
+                            ...0 .... = UCS2 treatment: the ME has a preference for the default alphabet
+                            .... 0... = SoLSA: The ME does not support SoLSA
+                            .... .1.. = CMSP: CM Service Prompt: Network initiated MO CM connection request supported for at least one CM protocol
+                            .... ..1. = A5/3 algorithm supported: encryption algorithm A5/3 available
+                            .... ...0 = A5/2 algorithm supported: encryption algorithm A5/2 not available
+                            gsm-Classmark3: 6114042f65233b8800d2f28000
+                            0... .... = Spare bit(s): 0
+                            .110 .... = Multiband supported field: 6
+                                .1.. .... = GSM 1800 Supported: true
+                                ..1. .... = E-GSM or R-GSM Supported: true
+                                ...0 .... = P-GSM Supported: false
+                            .... 0001 = A5 bits: 0x01
+                                .... 0... = A5/7 algorithm supported: encryption algorithm A5/7 not available
+                                .... .0.. = A5/6 algorithm supported: encryption algorithm A5/6 not available
+                                .... ..0. = A5/5 algorithm supported: encryption algorithm A5/5 not available
+                                .... ...1 = A5/4 algorithm supported: encryption algorithm A5/4 available
+                            0001 .... = Associated Radio Capability 2: 1
+                            .... 0100 = Associated Radio Capability 1: 4
+                            0... .... = R Support: false
+                            .0.. .... = HSCSD Multi Slot Capability: false
+                            ..0. .... = UCS2 treatment: the ME has a preference for the default alphabet
+                            ...0 .... = Extended Measurement Capability: false
+                            .... 0... = MS measurement capability: false
+                            .... .1.. = MS Positioning Method Capability present: true
+                            .... ..00  001. .... = MS Positioning Method: 0x01
+                                .... ..0. = MS assisted E-OTD: MS assisted E-OTD not supported
+                                .... ...0 = MS based E-OTD: MS based E-OTD not supported
+                                0... .... = MS assisted GPS: MS assisted GPS not supported
+                                .0.. .... = MS based GPS: MS based GPS not supported
+                                ..1. .... = MS Conventional GPS: Conventional GPS supported
+                            ...0 .... = ECSD Multi Slot Capability present: false
+                            .... 1... = 8-PSK Struct present: true
+                            .... .111  0110 .... = 8-PSK Struct: 0x76
+                                .... .1.. = Modulation Capability: 8-PSK supported for uplink transmission and downlink reception
+                                .... ..1. = 8-PSK RF Power Capability 1 present: true
+                                .... ...1  0... .... = 8-PSK RF Power Capability 1: Power class E2 (0x02)
+                                .1.. .... = 8-PSK RF Power Capability 2 present: true
+                                ..10 .... = 8-PSK RF Power Capability 2: Power class E2 (0x02)
+                            .... 0... = GSM 400 Band Information present: false
+                            .... .1.. = GSM 850 Associated Radio Capability present: true
+                            .... ..01  00.. .... = GSM 850 Associated Radio Capability: 0x04
+                            ..1. .... = GSM 1900 Associated Radio Capability present: true
+                            ...0 001. = GSM 1900 Associated Radio Capability: 0x01
+                            .... ...1 = UMTS FDD Radio Access Technology Capability: UMTS FDD supported
+                            0... .... = UMTS 3.84 Mcps TDD Radio Access Technology Capability: UMTS 3.84 Mcps TDD not supported
+                            .0.. .... = CDMA 2000 Radio Access Technology Capability: CDMA 2000 not supported
+                            ..1. .... = DTM E/GPRS Multi Slot Information present: true
+                            ...1 1... = DTM GPRS Multi Slot Class: Multislot class 11 supported (3)
+                            .... .0.. = Single Slot DTM: Single Slot DTM not supported
+                            .... ..1. = DTM EGPRS Multi Slot Class present: true
+                            .... ...1  1... .... = DTM EGPRS Multi Slot Class: Multislot class 11 supported (3)
+                            .0.. .... = Single Band Support: false
+                            ..0. .... = GSM 750 Associated Radio Capability present: false
+                            ...0 .... = UMTS 1.28 Mcps TDD Radio Access Technology Capability: UMTS 1.28 Mcps TDD not supported
+                            .... 1... = GERAN Feature Package 1: GERAN feature package 1 supported
+                            .... .0.. = Extended DTM E/GPRS Multi Slot Information present: false
+                            .... ..0. = High Multislot Capability present: false
+                            .... ...0 = GERAN Iu Mode Support: false
+                            0... .... = GERAN Feature Package 2: GERAN feature package 2 not supported
+                            .00. .... = GMSK Multislot Power Profile: GMSK_MULTISLOT_POWER_PROFILE 0 (0)
+                            ...0 0... = 8-PSK Multislot Power Profile: 8-PSK_MULTISLOT_POWER_PROFILE 0 (0)
+                            .... .0.. = T-GSM 400 Band Information present: false
+                            .... ..0. = T-GSM 900 Associated Radio Capability present: false
+                            .... ...0  1... .... = Downlink Advanced Receiver Performance: Downlink Advanced Receiver Performance - phase I supported (1)
+                            .1.. .... = DTM Enhancements Capability: The mobile station supports enhanced DTM CS establishment and release procedures
+                            ..0. .... = DTM E/GPRS High Multi Slot Information present: false
+                            ...1 .... = Repeated ACCH Capability: The mobile station supports Repeated SACCH and Repeated Downlink FACCH
+                            .... 0... = GSM 710 Associated Radio Capability present: false
+                            .... .0.. = T-GSM 810 Associated Radio Capability present: false
+                            .... ..1. = Ciphering Mode Setting Capability: The mobile station supports the Ciphering Mode Setting IE in the DTM ASSIGNMENT COMMAND message
+                            .... ...0 = Additional Positioning Capabilities: The mobile station does not support additional positioning capabilities which can be retrieved using RRLP
+                            1... .... = E-UTRA FDD support: E-UTRA FDD supported
+                            .1.. .... = E-UTRA TDD support: E-UTRA TDD supported
+                            ..1. .... = E-UTRA Measurement and Reporting support: E-UTRAN Neighbour Cell measurements and measurement reporting while having an RR connection supported
+                            ...1 .... = Priority-based reselection support: Priority-based cell reselection supported
+                            .... 0... = UTRA CSG Cells Reporting: Reporting of UTRAN CSG cells not supported
+                            .... .01. = VAMOS Level: VAMOS I supported (1)
+                            .... ...0  1... .... = TIGHTER Capability: TIGHTER supported for speech and signalling channels only (1)
+                            .0.. .... = Selective Ciphering of Downlink SACCH: Not supported
+                            ..00 .... = CS to PS SRVCC from GERAN to UTRA: CS to PS SRVCC from GERAN to UMTS FDD and 1.28 Mcps TDD not supported (0)
+                            .... 00.. = CS to PS SRVCC from GERAN to E-UTRA: CS to PS SRVCC from GERAN to E-UTRA FDD and TDD not supported (0)
+                            .... ..0. = GERAN Network Sharing support: false
+                            .... ...0 = E-UTRA Wideband RSRQ measurements support: false
+                            0... .... = ER Band support: false
+                            .0.. .... = UTRA Multiple Frequency Band Indicators support: false
+                            ..0. .... = E-UTRA Multiple Frequency Band Indicators support: false
+                            ...0 .... = Extended TSC Set Capability support: false
+                            .... 0... = Extended EARFCN value range: Not supported
+                            .... .000 = Spare bit(s): 0
+            v370NonCriticalExtensions
+                rrcConnectionSetupComplete-v370ext
+                    ue-RadioAccessCapability-v370ext
+                        ue-RadioAccessCapabBandFDDList: 5 items
+                            Item 0
+                                UE-RadioAccessCapabBandFDD
+                                    radioFrequencyBandFDD: fdd2100 (0)
+                                    fddRF-Capability
+                                        ue-PowerClass: class3 (2)
+                                        txRxFrequencySeparation: default-TxRx-separation (0)
+                                    measurementCapability
+                                        compressedModeMeasCapabFDDList: 5 items
+                                            Item 0
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd2100 (0)
+                                                    .... ...1 dl-MeasurementsFDD: True
+                                                    1... .... ul-MeasurementsFDD: True
+                                            Item 1
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd1900 (1)
+                                                    .... .1.. dl-MeasurementsFDD: True
+                                                    .... ..1. ul-MeasurementsFDD: True
+                                            Item 2
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandV (5)
+                                                    ...1 .... dl-MeasurementsFDD: True
+                                                    .... 1... ul-MeasurementsFDD: True
+                                            Item 3
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandVI (3)
+                                                    .1.. .... dl-MeasurementsFDD: True
+                                                    ..1. .... ul-MeasurementsFDD: True
+                                            Item 4
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandIV (4)
+                                                    .... ...1 dl-MeasurementsFDD: True
+                                                    1... .... ul-MeasurementsFDD: True
+                                        compressedModeMeasCapabGSMList: 4 items
+                                            Item 0
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm900E (4)
+                                                    .1.. .... dl-MeasurementsGSM: True
+                                                    ..1. .... ul-MeasurementsGSM: True
+                                            Item 1
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1800 (5)
+                                                    .... ...1 dl-MeasurementsGSM: True
+                                                    1... .... ul-MeasurementsGSM: True
+                                            Item 2
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1900 (6)
+                                                    .... .1.. dl-MeasurementsGSM: True
+                                                    .... ..1. ul-MeasurementsGSM: True
+                                            Item 3
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm850 (2)
+                                                    ...1 .... dl-MeasurementsGSM: True
+                                                    .... 1... ul-MeasurementsGSM: True
+                            Item 1
+                                UE-RadioAccessCapabBandFDD
+                                    radioFrequencyBandFDD: fdd1900 (1)
+                                    fddRF-Capability
+                                        ue-PowerClass: class3 (2)
+                                        txRxFrequencySeparation: default-TxRx-separation (0)
+                                    measurementCapability
+                                        compressedModeMeasCapabFDDList: 5 items
+                                            Item 0
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd2100 (0)
+                                                    1... .... dl-MeasurementsFDD: True
+                                                    .1.. .... ul-MeasurementsFDD: True
+                                            Item 1
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd1900 (1)
+                                                    .... ..1. dl-MeasurementsFDD: True
+                                                    .... ...1 ul-MeasurementsFDD: True
+                                            Item 2
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandV (5)
+                                                    .... 1... dl-MeasurementsFDD: True
+                                                    .... .1.. ul-MeasurementsFDD: True
+                                            Item 3
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandVI (3)
+                                                    ..1. .... dl-MeasurementsFDD: True
+                                                    ...1 .... ul-MeasurementsFDD: True
+                                            Item 4
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandIV (4)
+                                                    1... .... dl-MeasurementsFDD: True
+                                                    .1.. .... ul-MeasurementsFDD: True
+                                        compressedModeMeasCapabGSMList: 4 items
+                                            Item 0
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm900E (4)
+                                                    ..1. .... dl-MeasurementsGSM: True
+                                                    ...1 .... ul-MeasurementsGSM: True
+                                            Item 1
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1800 (5)
+                                                    1... .... dl-MeasurementsGSM: True
+                                                    .1.. .... ul-MeasurementsGSM: True
+                                            Item 2
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1900 (6)
+                                                    .... ..1. dl-MeasurementsGSM: True
+                                                    .... ...1 ul-MeasurementsGSM: True
+                                            Item 3
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm850 (2)
+                                                    .... 1... dl-MeasurementsGSM: True
+                                                    .... .1.. ul-MeasurementsGSM: True
+                            Item 2
+                                UE-RadioAccessCapabBandFDD
+                                    radioFrequencyBandFDD: bandV (5)
+                                    fddRF-Capability
+                                        ue-PowerClass: class3 (2)
+                                        txRxFrequencySeparation: default-TxRx-separation (0)
+                                    measurementCapability
+                                        compressedModeMeasCapabFDDList: 5 items
+                                            Item 0
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd2100 (0)
+                                                    .1.. .... dl-MeasurementsFDD: True
+                                                    ..1. .... ul-MeasurementsFDD: True
+                                            Item 1
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd1900 (1)
+                                                    .... ...1 dl-MeasurementsFDD: True
+                                                    1... .... ul-MeasurementsFDD: True
+                                            Item 2
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandV (5)
+                                                    .... .1.. dl-MeasurementsFDD: True
+                                                    .... ..1. ul-MeasurementsFDD: True
+                                            Item 3
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandVI (3)
+                                                    ...1 .... dl-MeasurementsFDD: True
+                                                    .... 1... ul-MeasurementsFDD: True
+                                            Item 4
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandIV (4)
+                                                    .1.. .... dl-MeasurementsFDD: True
+                                                    ..1. .... ul-MeasurementsFDD: True
+                                        compressedModeMeasCapabGSMList: 4 items
+                                            Item 0
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm900E (4)
+                                                    ...1 .... dl-MeasurementsGSM: True
+                                                    .... 1... ul-MeasurementsGSM: True
+                                            Item 1
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1800 (5)
+                                                    .1.. .... dl-MeasurementsGSM: True
+                                                    ..1. .... ul-MeasurementsGSM: True
+                                            Item 2
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1900 (6)
+                                                    .... ...1 dl-MeasurementsGSM: True
+                                                    1... .... ul-MeasurementsGSM: True
+                                            Item 3
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm850 (2)
+                                                    .... .1.. dl-MeasurementsGSM: True
+                                                    .... ..1. ul-MeasurementsGSM: True
+                            Item 3
+                                UE-RadioAccessCapabBandFDD
+                                    radioFrequencyBandFDD: bandVI (3)
+                                    fddRF-Capability
+                                        ue-PowerClass: class3 (2)
+                                        txRxFrequencySeparation: default-TxRx-separation (0)
+                                    measurementCapability
+                                        compressedModeMeasCapabFDDList: 5 items
+                                            Item 0
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd2100 (0)
+                                                    ..1. .... dl-MeasurementsFDD: True
+                                                    ...1 .... ul-MeasurementsFDD: True
+                                            Item 1
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd1900 (1)
+                                                    1... .... dl-MeasurementsFDD: True
+                                                    .1.. .... ul-MeasurementsFDD: True
+                                            Item 2
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandV (5)
+                                                    .... ..1. dl-MeasurementsFDD: True
+                                                    .... ...1 ul-MeasurementsFDD: True
+                                            Item 3
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandVI (3)
+                                                    .... 1... dl-MeasurementsFDD: True
+                                                    .... .1.. ul-MeasurementsFDD: True
+                                            Item 4
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandIV (4)
+                                                    ..1. .... dl-MeasurementsFDD: True
+                                                    ...1 .... ul-MeasurementsFDD: True
+                                        compressedModeMeasCapabGSMList: 4 items
+                                            Item 0
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm900E (4)
+                                                    .... 1... dl-MeasurementsGSM: True
+                                                    .... .1.. ul-MeasurementsGSM: True
+                                            Item 1
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1800 (5)
+                                                    ..1. .... dl-MeasurementsGSM: True
+                                                    ...1 .... ul-MeasurementsGSM: True
+                                            Item 2
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1900 (6)
+                                                    1... .... dl-MeasurementsGSM: True
+                                                    .1.. .... ul-MeasurementsGSM: True
+                                            Item 3
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm850 (2)
+                                                    .... ..1. dl-MeasurementsGSM: True
+                                                    .... ...1 ul-MeasurementsGSM: True
+                            Item 4
+                                UE-RadioAccessCapabBandFDD
+                                    radioFrequencyBandFDD: bandIV (4)
+                                    fddRF-Capability
+                                        ue-PowerClass: class3 (2)
+                                        txRxFrequencySeparation: default-TxRx-separation (0)
+                                    measurementCapability
+                                        compressedModeMeasCapabFDDList: 5 items
+                                            Item 0
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd2100 (0)
+                                                    ...1 .... dl-MeasurementsFDD: True
+                                                    .... 1... ul-MeasurementsFDD: True
+                                            Item 1
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: fdd1900 (1)
+                                                    .1.. .... dl-MeasurementsFDD: True
+                                                    ..1. .... ul-MeasurementsFDD: True
+                                            Item 2
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandV (5)
+                                                    .... ...1 dl-MeasurementsFDD: True
+                                                    1... .... ul-MeasurementsFDD: True
+                                            Item 3
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandVI (3)
+                                                    .... .1.. dl-MeasurementsFDD: True
+                                                    .... ..1. ul-MeasurementsFDD: True
+                                            Item 4
+                                                CompressedModeMeasCapabFDD
+                                                    radioFrequencyBandFDD: bandIV (4)
+                                                    ...1 .... dl-MeasurementsFDD: True
+                                                    .... 1... ul-MeasurementsFDD: True
+                                        compressedModeMeasCapabGSMList: 4 items
+                                            Item 0
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm900E (4)
+                                                    .... .1.. dl-MeasurementsGSM: True
+                                                    .... ..1. ul-MeasurementsGSM: True
+                                            Item 1
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1800 (5)
+                                                    ...1 .... dl-MeasurementsGSM: True
+                                                    .... 1... ul-MeasurementsGSM: True
+                                            Item 2
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm1900 (6)
+                                                    .1.. .... dl-MeasurementsGSM: True
+                                                    ..1. .... ul-MeasurementsGSM: True
+                                            Item 3
+                                                CompressedModeMeasCapabGSM
+                                                    radioFrequencyBandGSM: gsm850 (2)
+                                                    .... ...1 dl-MeasurementsGSM: True
+                                                    1... .... ul-MeasurementsGSM: True
+                v380NonCriticalExtensions
+                    rrcConnectionSetupComplete-v380ext
+                        ue-RadioAccessCapability-v380ext
+                            ue-PositioningCapabilityExt-v380
+                                ...0 .... rx-tx-TimeDifferenceType2Capable: False
+                        dl-PhysChCapabilityFDD-v380ext
+                    v3a0NonCriticalExtensions
+                        rrcConnectionSetupComplete-v3a0ext
+                        laterNonCriticalExtensions
+                            rrcConnectionSetupComplete-r3-add-ext: e208561c7af3e9a19a6bb65c003203a03603803980 [bit length 161, 7 LSB pad bits]
+                                RRCConnectionSetupComplete-r3-add-ext-IEs
+                                    rrcConnectionSetupComplete-v650ext
+                                        ue-RadioAccessCapability-v650ext
+                                            ue-RadioAccessCapabBandFDDList2: 1 item
+                                                Item 0
+                                                    UE-RadioAccessCapabBandFDD2
+                                                        radioFrequencyBandFDD2: bandVIII (0)
+                                                        fddRF-Capability
+                                                            ue-PowerClass: class3 (2)
+                                                            txRxFrequencySeparation: default-TxRx-separation (0)
+                                                        measurementCapability2
+                                                            compressedModeMeasCapabFDDList: 6 items
+                                                                Item 0
+                                                                    CompressedModeMeasCapabFDD2
+                                                                        radioFrequencyBandFDD: fdd2100 (0)
+                                                                        ...1 .... dl-MeasurementsFDD: True
+                                                                        .... 1... ul-MeasurementsFDD: True
+                                                                Item 1
+                                                                    CompressedModeMeasCapabFDD2
+                                                                        radioFrequencyBandFDD: fdd1900 (1)
+                                                                        ..1. .... dl-MeasurementsFDD: True
+                                                                        ...1 .... ul-MeasurementsFDD: True
+                                                                Item 2
+                                                                    CompressedModeMeasCapabFDD2
+                                                                        radioFrequencyBandFDD: bandV (5)
+                                                                        .1.. .... dl-MeasurementsFDD: True
+                                                                        ..1. .... ul-MeasurementsFDD: True
+                                                                Item 3
+                                                                    CompressedModeMeasCapabFDD2
+                                                                        radioFrequencyBandFDD: bandVI (3)
+                                                                        1... .... dl-MeasurementsFDD: True
+                                                                        .1.. .... ul-MeasurementsFDD: True
+                                                                Item 4
+                                                                    CompressedModeMeasCapabFDD2
+                                                                        radioFrequencyBandFDD: bandIV (4)
+                                                                        .... ...1 dl-MeasurementsFDD: True
+                                                                        1... .... ul-MeasurementsFDD: True
+                                                                Item 5
+                                                                    CompressedModeMeasCapabFDD2
+                                                                        radioFrequencyBandFDD2: bandVIII (0)
+                                                                        .... ...1 dl-MeasurementsFDD: True
+                                                                        1... .... ul-MeasurementsFDD: True
+                                                            compressedModeMeasCapabGSMList: 4 items
+                                                                Item 0
+                                                                    CompressedModeMeasCapabGSM
+                                                                        radioFrequencyBandGSM: gsm900E (4)
+                                                                        .1.. .... dl-MeasurementsGSM: True
+                                                                        ..1. .... ul-MeasurementsGSM: True
+                                                                Item 1
+                                                                    CompressedModeMeasCapabGSM
+                                                                        radioFrequencyBandGSM: gsm1800 (5)
+                                                                        .... ...1 dl-MeasurementsGSM: True
+                                                                        1... .... ul-MeasurementsGSM: True
+                                                                Item 2
+                                                                    CompressedModeMeasCapabGSM
+                                                                        radioFrequencyBandGSM: gsm1900 (6)
+                                                                        .... .1.. dl-MeasurementsGSM: True
+                                                                        .... ..1. ul-MeasurementsGSM: True
+                                                                Item 3
+                                                                    CompressedModeMeasCapabGSM
+                                                                        radioFrequencyBandGSM: gsm850 (2)
+                                                                        ...1 .... dl-MeasurementsGSM: True
+                                                                        .... 1... ul-MeasurementsGSM: True
+                                            ue-RadioAccessCapabBandFDDList-ext: 5 items
+                                                Item 0
+                                                    UE-RadioAccessCapabBandFDD-ext
+                                                        radioFrequencyBandFDD: fdd2100 (0)
+                                                        compressedModeMeasCapabFDDList-ext: 1 item
+                                                            Item 0
+                                                                CompressedModeMeasCapabFDD-ext
+                                                                    radioFrequencyBandFDD2: bandVIII (0)
+                                                                    ..1. .... dl-MeasurementsFDD: True
+                                                                    ...1 .... ul-MeasurementsFDD: True
+                                                Item 1
+                                                    UE-RadioAccessCapabBandFDD-ext
+                                                        radioFrequencyBandFDD: fdd1900 (1)
+                                                        compressedModeMeasCapabFDDList-ext: 1 item
+                                                            Item 0
+                                                                CompressedModeMeasCapabFDD-ext
+                                                                    radioFrequencyBandFDD2: bandVIII (0)
+                                                                    .... ..1. dl-MeasurementsFDD: True
+                                                                    .... ...1 ul-MeasurementsFDD: True
+                                                Item 2
+                                                    UE-RadioAccessCapabBandFDD-ext
+                                                        radioFrequencyBandFDD: bandV (5)
+                                                        compressedModeMeasCapabFDDList-ext: 1 item
+                                                            Item 0
+                                                                CompressedModeMeasCapabFDD-ext
+                                                                    radioFrequencyBandFDD2: bandVIII (0)
+                                                                    ..1. .... dl-MeasurementsFDD: True
+                                                                    ...1 .... ul-MeasurementsFDD: True
+                                                Item 3
+                                                    UE-RadioAccessCapabBandFDD-ext
+                                                        radioFrequencyBandFDD: bandVI (3)
+                                                        compressedModeMeasCapabFDDList-ext: 1 item
+                                                            Item 0
+                                                                CompressedModeMeasCapabFDD-ext
+                                                                    radioFrequencyBandFDD2: bandVIII (0)
+                                                                    .... ..1. dl-MeasurementsFDD: True
+                                                                    .... ...1 ul-MeasurementsFDD: True
+                                                Item 4
+                                                    UE-RadioAccessCapabBandFDD-ext
+                                                        radioFrequencyBandFDD: bandIV (4)
+                                                        compressedModeMeasCapabFDDList-ext: 1 item
+                                                            Item 0
+                                                                CompressedModeMeasCapabFDD-ext
+                                                                    radioFrequencyBandFDD2: bandVIII (0)
+                                                                    ..1. .... dl-MeasurementsFDD: True
+                                                                    ...1 .... ul-MeasurementsFDD: True
+                                    v680NonCriticalExtensions
+                                        rrcConnectionSetupComplete-v680ext
+                                            ue-RadioAccessCapability-v680ext
+                                                multiModeRAT-Capability-v680ext
+                                        v7e0NonCriticalExtensions
+                                            rrcConnectionSetupComplete-v7e0ext
+                                                ue-RadioAccessCapability
+                                                    supportForTwoDRXSchemesInPCH: true (0)
+                                                    supportEDPDCHPowerInterpolation: true (0)
+                            v3g0NonCriticalExtensions
+                                rrcConnectionSetupComplete-v3g0ext
+                                v4b0NonCriticalExtensions
+                                    rrcConnectionSetupComplete-v4b0ext
+                                        ue-RadioAccessCapability-v4b0ext
+                                            pdcp-Capability-r4-ext
+                                                supportForRfc3095: notSupported (0)
+                                                    notSupported: NULL
+                                    v590NonCriticalExtensions
+                                        rrcConnectionSetupComplete-v590ext
+                                            ue-RadioAccessCapability-v590ext
+                                                dl-CapabilityWithSimultaneousHS-DSCHConfig: kbps64 (1)
+                                                pdcp-Capability-r5-ext
+                                                    0... .... supportForRfc3095ContextRelocation: False
+                                                rlc-Capability-r5-ext
+                                                physicalChannelCapability
+                                                    fdd-hspdsch: supported (0)
+                                                        supported
+                                                            hsdsch-physical-layer-category: 10
+                                                            .0.. .... dummy: False
+                                                            ..0. .... dummy2: False
+                                                    tdd384-hspdsch: unsupported (1)
+                                                        unsupported: NULL
+                                                    tdd128-hspdsch: unsupported (1)
+                                                        unsupported: NULL
+                                                multiModeRAT-Capability-v590ext
+                                                    .... .1.. supportOfUTRAN-ToGERAN-NACC: True
+                                        v5c0NonCriticalExtensions
+                                            rrcConnectionSetupComplete-v5c0ext
+                                            v690NonCriticalExtensions
+                                                rrcConnectionSetupComplete-v690ext
+                                                    ueCapabilityContainer: 45f922cd648c6bff40d0106143891a3d3b7973fe02801509... [bit length 216]
+                                                        UE-CapabilityContainer-IEs
+                                                            ue-RadioAccessCapability-v690ext
+                                                                physicalchannelcapability-edch
+                                                                    fdd-edch: supported (0)
+                                                                        supported
+                                                                            edch-PhysicalLayerCategory: 6
+                                                            v6b0NonCriticalExtensions
+                                                                ue-RadioAccessCapability-v6b0ext
+                                                                    supportForSIB11bis: true (0)
+                                                                v6e0NonCriticalExtensions
+                                                                    ue-RadioAccessCapability-v6e0ext
+                                                                        supportForFDPCH: true (0)
+                                                                    v770NonCriticalExtensions
+                                                                        ue-RadioAccessCapability-v770ext
+                                                                            rlc-Capability
+                                                                                .0.. .... supportOfTwoLogicalChannel: False
+                                                                            physicalChannelCapability
+                                                                                fddPhysChCapability
+                                                                                    downlinkPhysChCapability
+                                                                                        hsdsch-physical-layer-category-ext: 14
+                                                                                        enhancedFdpch: true (0)
+                                                                                        hsdschReception-CellFach: true (0)
+                                                                                    uplinkPhysChCapability
+                                                                                        discontinuousDpcchTransmission: true (0)
+                                                                                        slotFormat4: true (0)
+                                                                            multiModeRAT-Capability
+                                                                            ue-PositioningCapability
+                                                                            mac-ehsSupport: true (0)
+                                                                        v790NonCriticalExtensions
+                                                                            ue-RadioAccessCapability-v790ext
+                                                                            v860NonCriticalExtensions
+                                                                                ue-RadioAccessCapability-v860ext
+                                                                                    physicalChannelCapability
+                                                                                        fddPhysChCapability
+                                                                                            downlinkPhysChCapability
+                                                                                                hsdsch-physical-layer-category-ext2: 24
+                                                                                                supportOfHsdschDrxOperation: true (0)
+                                                                                    multiModeRAT-Capability
+                                                                                        supportOfEUTRAFDD: doesSupportEUTRAFDD (0)
+                                                                                        supportOfInterRATHOToEUTRAFDD: doesSupportInterRATHOToEUTRAFDD (0)
+                                                                                        supportOfEUTRATDD: doesSupportEUTRATDD (0)
+                                                                                        supportOfInterRATHOToEUTRATDD: doesSupportInterRATHOToEUTRATDD (0)
+                                                                                        eutraFeatureGroupIndicators: d0 [bit length 4, 4 LSB pad bits, 1101 .... decimal value 13]
+                                                                                            1... .... = Indicator 1: UTRA CELL_PCH to EUTRA RRC_IDLE cell reselection - Supported
+                                                                                            .1.. .... = Indicator 2: EUTRAN measurements and reporting in connected mode - Supported
+                                                                                            ..0. .... = Indicator 3: UTRA CELL_FACH absolute priority cell reselection for high priority layers - Not supported
+                                                                                            ...1 .... = Indicator 4: UTRA CELL_FACH absolute priority cell reselection for all layers - Supported
+                                                                                    ue-PositioningCapability
+                                                                                    supportOfCommonEDCH: true (0)
+                                                                                    supportOfMACiis: true (0)
+                                                                                    ue-RadioAccessCapabBandFDDList3: 1 item
+                                                                                        Item 0
+                                                                                            UE-RadioAccessCapabBandFDD3
+                                                                                                measurementCapability3
+                                                                                                    compressedModeMeasCapabEUTRAList: 11 items
+                                                                                                        Item 0
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 1
+                                                                                                                ...1 .... compressedMode: True
+                                                                                                        Item 1
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 2
+                                                                                                                ..1. .... compressedMode: True
+                                                                                                        Item 2
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 3
+                                                                                                                .1.. .... compressedMode: True
+                                                                                                        Item 3
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 4
+                                                                                                                1... .... compressedMode: True
+                                                                                                        Item 4
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 5
+                                                                                                                .... ...1 compressedMode: True
+                                                                                                        Item 5
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 7
+                                                                                                                .... ..1. compressedMode: True
+                                                                                                        Item 6
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 8
+                                                                                                                .... .1.. compressedMode: True
+                                                                                                        Item 7
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 20
+                                                                                                                .... 1... compressedMode: True
+                                                                                                        Item 8
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 28
+                                                                                                                ...1 .... compressedMode: True
+                                                                                                        Item 9
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 38
+                                                                                                                ..1. .... compressedMode: True
+                                                                                                        Item 10
+                                                                                                            CompressedModeMeasCapabEUTRA
+                                                                                                                radioFrequencyBandEUTRA: 40
+                                                                                                                .1.. .... compressedMode: True
+                                                                                v880NonCriticalExtensions
+                                                                                    ue-RadioAccessCapability-v880ext
+                                                                                        supportForPriorityReselectionInUTRAN: true (0)
+                                                                                    v890NonCriticalExtensions
+                                                                                        ue-RadioAccessCapability-v890ext
+                                                                                            supportCellSpecificTxDiversityinDC-Operation: true (0)
+                                                                                        v920NonCriticalExtensions
+                                                                                            ue-RadioAccessCapability-v920ext
+                                                                                                physicalChannelCapability
+                                                                                                rlc-Capability
+                                                                                            v970NonCriticalExtensions
+                                                                                                ue-RadioAccessCapability-v970ext
+                                                                                                va40NonCriticalExtensions
+                                                                                                    ue-RadioAccessCapability-va40ext
+                                                                                                        physicalChannelCapability
+                                                                                                        rlc-Capability
+                                                                                                    va60NonCriticalExtensions
+                                                                                                        ue-RadioAccessCapability-va60ext
+                                                                                                        va80NonCriticalExtensions
+                                                                                                            ue-RadioAccessCapability-va80ext
+                                                                                                            laterNonCriticalExtensions
+                                                                                                                v9c0NonCriticalExtensions
+                                                                                                                    ue-RadioAccessCapability-v9c0ext
+                                                                                                                    vaa0NonCriticalExtensions
+                                                                                                                        ue-RadioAccessCapability-vaa0ext
+                                                                                                                        vb50NonCriticalExtensions
+                                                                                                                            ue-RadioAccessCapability-vb50ext
+                                                                                                                                multiModeRAT-Capability
+                                                                                                                                physicalChannelCapability
+                                                                                                                                rlc-Capability
+                                                                                                                            vb70NonCriticalExtensions
+                                                                                                                                ue-RadioAccessCapability-vb70ext
+                                                                                                                                vae0NonCriticalExtensions
+                                                                                                                                    ue-RadioAccessCapability-vae0ext
+                                                                                                                                        multiModeRAT-Capability
+                                                                                                                                            eutraSupportOfMFBI: true (0)
+                                                v770NonCriticalExtensions
+                                                    rrcConectionSetupComplete-v770ext
+                                                        deferredMeasurementControlReading: true (0)

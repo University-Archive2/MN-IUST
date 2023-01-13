@@ -1,0 +1,72 @@
+DLT: 148, Payload: aww (Automator Wireshark Wrapper)
+Automator Wireshark Wrapper
+    Protocol: 100
+    Data length: 17
+UL-CCCH-Message
+    message: rrcConnectionRequest (1)
+        rrcConnectionRequest
+            initialUE-Identity: tmsi-and-LAI (1)
+                tmsi-and-LAI
+                    tmsi: 22161f32 [bit length 32, 0010 0010  0001 0110  0001 1111  0011 0010 decimal value 571875122]
+                    lai
+                        plmn-Identity
+                            mcc: 3 items
+                                Item 0
+                                    Digit: 4
+                                Item 1
+                                    Digit: 3
+                                Item 2
+                                    Digit: 2
+                            mnc: 2 items
+                                Item 0
+                                    Digit: 1
+                                Item 1
+                                    Digit: 1
+                        lac: 8598 [bit length 16, 1000 0101  1001 1000 decimal value 34200]
+            establishmentCause: originatingConversationalCall (0)
+            protocolErrorIndicator: noError (0)
+            v3d0NonCriticalExtensions
+                rRCConnectionRequest-v3d0ext
+                v4b0NonCriticalExtensions
+                    rrcConnectionRequest-v4b0ext
+                        accessStratumReleaseIndicator: rel-9 (5)
+                    v590NonCriticalExtensions
+                        rrcConnectionRequest-v590ext
+                            ...0 .... predefinedConfigStatusInfo: False
+                        v690NonCriticalExtensions
+                            rrcConnectionRequest-v690ext
+                                ueCapabilityIndication: hsdch-edch (1)
+                                domainIndicator: cs-domain (0)
+                                    cs-domain
+                                        csCallType: speech (0)
+                            v6b0NonCriticalExtensions
+                                rrcConnectionRequest-v6b0ext
+                                v6e0NonCriticalExtensions
+                                    rrcConnectionRequest-v6e0ext
+                                        supportForFDPCH: true (0)
+                                    v770NonCriticalExtensions
+                                        rrcConnectionRequest-v770ext
+                                            hspdschReception-CellFach: true (0)
+                                            mac-ehsSupport: true (0)
+                                            discontinuousDpcchTransmission: true (0)
+                                        v7b0NonCriticalExtensions
+                                            rrcConnectionRequest-v7b0ext
+                                                supportForE-FDPCH: true (0)
+                                            v860NonCriticalExtensions
+                                                rrcConnectionRequest-v860ext
+                                                    supportOfCommonEDCH: true (0)
+                                                    multiCellSupport: true (0)
+                                                    supportOfMACiis: true (0)
+                                                v7e0NonCriticalExtensions
+                                                    rrcConnectionRequest-v7e0ext
+                                                    v7g0NonCriticalExtensions
+                                                        rrcConnectionRequest-v7g0ext
+                                                        v920NonCriticalExtensions
+                                                            rrcConnectionRequest-v920ext
+                                                            v940NonCriticalExtensions
+                                                                rrcConnectionRequest-v940ext
+                                                                va40NonCriticalExtensions
+                                                                    rrcConnectionRequest-va40ext
+                                                                    v9b0NonCriticalExtensions
+                                                                        rrcConnectionRequest-v9b0ext
+                                                                            cSFBIndication: true (0)
