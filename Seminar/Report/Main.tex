@@ -1,0 +1,54 @@
+\documentclass{report}
+
+% اابتدا باید استایل بوستان را نصب نمایید. 
+\input{Boostan/Boostan-UserManual}
+%%%%%%%%%%%%%%%%%%%
+\input{ETC/Packages}
+%%%%%%%%%%%%%%%%%%%
+%د ر قسمت زیر، فایل جامع واژه نامه و واژه نامه MyWords که کلمات اضافه‌ی هر شخص است وارد شده اند. 
+\input{ETC/Words/Words}
+\input{ETC/Words/MyWords}
+%%%%%%%%%%%%%%%%%%%
+% در قسمت زیر، فایل اختصارات  معرفی شده است. نیاز است که اختصارات خود را به این فایل اضافه نمایید. 
+\input{ETC/Abbrevation/MyAbbrevation}
+%%%%%%%%%%%%%Name of the First page%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{latin}
+\title{ 
+	آشنایی با معماری
+	O-RAN
+	و واسط‌های معرفی شده در آن
+}
+\type{
+	سمینار درس مباحث ویژه‌ی ۲ در شبکه‌های کامپیوتری (شبکه‌های تلفن همراه) - پاییز ۱۴۰۱
+  }
+
+\author{علی نظری : ۴۰۱۷۲۵۱۷۳}
+\end{latin}
+\logofile{Picture/IUST}
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+\begin{document}
+\pagenumbering{gobble}
+\Godpage
+\maketitle
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+%\listoftables
+\pagenumbering{arabic}
+
+\input{Chapters/Abstract}
+\input{Chapters/Preface}
+\input{Chapters/Architecture}
+\input{Chapters/NearRT}
+\input{Chapters/NoneRT}
+\input{Chapters/Interfaces}
+\input{Chapters/WGs}
+
+%\input{Chapters/Glassory}
+
+\bibliography{ETC/Refrences.bib}
+%\printabbreviation
+%\printglossary
+\end{document}

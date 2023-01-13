@@ -1,0 +1,20 @@
+;; This logfile was generated automatically by `xindy'
+;; at 19.03.2022  02:14:52
+;; Indexstyle: "D:\\CurrentDesTop\\Glassory\\EU8HISHpnS", Rawindex: "D:\\CurrentDesTop\\Glassory\\NYxq_8N2sx", Output: "Main.gls"
+
+
+Building indexentry-tree:
+Hierdepth of index is :TREE
+
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+
+Forming letter-groups:
+Letter-group: "¸ª³¦­¦´´ ¤°®®¶¯ª¤¢µª°¯" -> "W"
+Letter-group: "¸ª³¦­¦´´ ¯¦µ¸°³¬" -> "W"
+Letter-group: "¢££³¦·¢µª°¯" -> "A"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¢££³¦·¢µª°¯" -> "A"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¸ª³¦­¦´´ ¤°®®¶¯ª¤¢µª°¯" -> "W"
