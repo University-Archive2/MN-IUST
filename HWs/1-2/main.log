@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.13)  30 DEC 2022 16:53
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.13)  30 DEC 2022 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -760,49 +760,64 @@ LaTeX Info: Redefining \nameref on input line 6.
 
  (./Questions/main.tex (./Questions/Q1.tex
 LaTeX Font Info:    Font shape `TU/BNazanin.ttf(0)/m/n' will be
-(Font)              scaled to size 18.72003pt on input line 17.
+(Font)              scaled to size 18.72003pt on input line 39.
 
 
 LaTeX Font Warning: Font shape `TU/BNazanin.ttf(0)/b/n' undefined
-(Font)              using `TU/BNazanin.ttf(0)/m/n' instead on input line 17.
+(Font)              using `TU/BNazanin.ttf(0)/m/n' instead on input line 39.
 
 LaTeX Font Info:    Font shape `TU/BNazanin.ttf(0)/b/n' will be
-(Font)              scaled to size 26.96207pt on input line 17.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+(Font)              scaled to size 26.96207pt on input line 39.
+LaTeX Font Info:    Font shape `TU/BNazanin.ttf(0)/m/n' will be
+(Font)              scaled to size 15.60004pt on input line 39.
+LaTeX Font Info:    Font shape `TU/BNazanin.ttf(0)/b/n' will be
+(Font)              scaled to size 15.60004pt on input line 39.
+LaTeX Font Info:    Font shape `TU/BNazanin.ttf(0)/b/n' will be
+(Font)              scaled to size 18.72003pt on input line 39.
+File: Images/rxlev.png Graphic file (type bmp)
+<Images/rxlev.png>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/BNazanin.ttf(0)/m/n' will be
-(Font)              scaled to size 9.10002pt on input line 17.
+(Font)              scaled to size 9.10002pt on input line 39.
 LaTeX Font Info:    Font shape `TU/BNazanin.ttf(0)/m/n' will be
-(Font)              scaled to size 10.40002pt on input line 17.
-))
+(Font)              scaled to size 10.40002pt on input line 39.
+)
+(./Questions/Q2.tex
 File: Images/IUSTLogo.png Graphic file (type bmp)
 <Images/IUSTLogo.png>
  [1
 
-]
-(./main.aux)
+]) (./Questions/Q3.tex
+File: Images/IUSTLogo.png Graphic file (type bmp)
+<Images/IUSTLogo.png>
+ [2]) (./Questions/Q4.tex))
+File: Images/IUSTLogo.png Graphic file (type bmp)
+<Images/IUSTLogo.png>
+
+[3] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4478337E1A01240BB46407B1FDB6E701;323.
+(rerunfilecheck)             Checksum: F7C3D68D8C518EDEC246491898B681AE;1384.
  ) 
 Here is how much of TeX's memory you used:
- 14844 strings out of 476179
- 294536 string characters out of 5809543
+ 14894 strings out of 476179
+ 295558 string characters out of 5809543
  724648 words of memory out of 5000000
- 35310 multiletter control sequences out of 15000+600000
- 474594 words of font info for 71 fonts, out of 8000000 for 9000
+ 35347 multiletter control sequences out of 15000+600000
+ 474618 words of font info for 74 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,94p,1311b,377s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,94p,1311b,381s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (1 page).
+Output written on main.pdf (3 pages).
